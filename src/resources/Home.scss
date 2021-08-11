@@ -1,0 +1,42 @@
+$bg: url("../resources/me_pic.png");
+$text-color: rgb(73, 214, 195); //#b47aff; //#c3e7e3;
+// $caret-color: white;
+$text-length: 15;
+$animation-time: 2.5s;
+// Typing style
+.typingContainer {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+	background: #{$bg};
+	font-family: Consolas, monospace;
+	font-size: 4em;
+	color: #{$text-color};
+}
+// Animation
+@keyframes typing {
+	from {
+		width: 0;
+	}
+}
+@keyframes blink-caret {
+	50% {
+		border-color: transparent;
+	}
+}
+
+.typing {
+	border-right: 0.1em solid;
+	width: 9em; /* fallback */
+	width: 15ch; /* # of chars */
+	margin: 2em 1em;
+	white-space: nowrap;
+	overflow: hidden;
+	transition: width 2.5s;
+
+	animation: typing #{$animation-time} steps(#{$text-length}, end),
+		/* # of steps = # of chars */ blink-caret 0.5s step-end infinite
+			alternate;
+	animation-delay: 0s;
+}
