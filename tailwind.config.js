@@ -16,6 +16,12 @@ module.exports = {
 			fuchsia: colors.fuchsia,
 			white: colors.white,
 		},
+		extend: {
+			backgroundImage: (theme) => ({
+				clouds: "url('resources/Website-Background-scaled.jpg')",
+				// "footer-texture": "url('/img/footer-texture.png')",
+			}),
+		},
 	},
 	variants: {
 		extend: {},

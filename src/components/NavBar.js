@@ -4,9 +4,9 @@ import { SocialIcon } from "react-social-icons";
 
 export default function NavBar() {
 	return (
-		<header>
+		<header className="sticky top-0 z-50">
 			<div>
-				<nav className="flex items-center justify-between flex-wrap bg-teal-500 p-4 ">
+				<nav className="flex items-center justify-between flex-wrap bg-teal-500 p-4">
 					<div className="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
 						<NavLink
 							to="/"
@@ -45,29 +45,6 @@ export default function NavBar() {
 							>
 								About Me
 							</NavLink>
-						</div>
-						<div className="inline-flex py-3 px-3 my-6">
-							<SocialIcon
-								url="mailto:adityasamantaroy@gmail.com"
-								className="mr-4"
-								target="_blank"
-								fgColor="#fff"
-								style={{ height: 35, width: 35 }}
-							/>
-							<SocialIcon
-								url="https://github.com/AdityaSamantaroy"
-								className="mr-4"
-								target="_blank"
-								fgColor="#fff"
-								style={{ height: 35, width: 35 }}
-							/>
-							<SocialIcon
-								url="https://www.linkedin.com/in/aditya-samantaroy-600502194/"
-								className="mr-4"
-								target="_blank"
-								fgColor="#fff"
-								style={{ height: 35, width: 35 }}
-							/>
 						</div>
 					</div>
 				</nav>

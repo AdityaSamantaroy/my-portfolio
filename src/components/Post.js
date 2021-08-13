@@ -48,8 +48,8 @@ export default function Post() {
 	}, []);
 
 	return (
-		<main>
-			<section className="ml-6 mr-6 ">
+		<body className="bg-clouds h-screen">
+			<section className="ml-6 mr-6">
 				<div className="font-normal text-3xl p-2">Blog Posts Page</div>
 				<div className="container mx-auto m-3 flex-wrap grid grid-cols-4 gap-6 ">
 					{postData &&
@@ -72,7 +72,10 @@ export default function Post() {
 												}
 											/>
 										</span>
-										<span className="block w-full relative flex justify-begin items-end pr-4 pb-4">
+										<span
+											className="block w-full relative flex justify-begin items-end pr-4 pb-4"
+											key={index}
+										>
 											<h3>{post.title}</h3>
 										</span>
 									</Link>
@@ -81,6 +84,6 @@ export default function Post() {
 						})}
 				</div>
 			</section>
-		</main>
+		</body>
 	);
 }

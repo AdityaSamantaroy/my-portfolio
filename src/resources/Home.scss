@@ -1,5 +1,5 @@
-$bg: url("../resources/me_pic.png");
-$text-color: rgb(73, 214, 195); //#b47aff; //#c3e7e3;
+$bg: url("../resources/Website-Background-scaled.jpg");
+$text-color: #fff; // rgb(73, 214, 195); //#b47aff; //#c3e7e3;
 // $caret-color: white;
 $text-length: 15;
 $animation-time: 2.5s;
@@ -8,8 +8,8 @@ $animation-time: 2.5s;
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	height: 100vh;
-	background: #{$bg};
+	height: 90vh;
+	// background: #{$bg};
 	font-family: Consolas, monospace;
 	font-size: 4em;
 	color: #{$text-color};
