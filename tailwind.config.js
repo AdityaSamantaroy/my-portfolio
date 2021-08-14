@@ -19,6 +19,7 @@ module.exports = {
 		extend: {
 			backgroundImage: (theme) => ({
 				clouds: "url('resources/Website-Background-scaled.jpg')",
+				me: "url('resources/me_pic.png')",
 				// "footer-texture": "url('/img/footer-texture.png')",
 			}),
 		},

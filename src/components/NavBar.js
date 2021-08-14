@@ -1,12 +1,12 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import { SocialIcon } from "react-social-icons";
+// import { SocialIcon } from "react-social-icons";
 
 export default function NavBar() {
 	return (
 		<header className="sticky top-0 z-50">
 			<div>
-				<nav className="flex items-center justify-between flex-wrap bg-teal-500 p-4">
+				<nav className="flex items-center justify-between flex-wrap bg-teal-500 p-6">
 					<div className="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
 						<NavLink
 							to="/"

@@ -51,7 +51,9 @@ export default function Project() {
 	return (
 		<body className="bg-clouds h-screen">
 			<section className="ml-6 mr-6 ">
-				<div className="font-normal text-3xl p-2">Projects Page</div>
+				<div className="font-normal text-4xl p-2 text-teal-900">
+					Projects Page
+				</div>
 				<div className="container mx-auto m-3 flex-wrap grid grid-cols-4 gap-6 ">
 					{projectData &&
 						projectData.map((project, index) => {
