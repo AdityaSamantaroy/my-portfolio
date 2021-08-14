@@ -15,6 +15,7 @@ module.exports = {
 			amber: colors.amber,
 			fuchsia: colors.fuchsia,
 			white: colors.white,
+			purple: colors.purple,
 		},
 		extend: {
 			backgroundImage: (theme) => ({

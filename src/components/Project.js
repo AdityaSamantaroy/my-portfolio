@@ -58,17 +58,17 @@ export default function Project() {
 					{projectData &&
 						projectData.map((project, index) => {
 							return (
-								<article className="container mx-auto h-1em w-1em">
+								<article className="container mx-auto h-1em w-1em  transform hover:scale-105 hover:shadow-xl transition duration-300 bg-white rounded-lg">
 									<Link
 										to={"/project/" + project.slug.current}
 										key={project.slug.current}
 									>
 										<span
-											className="block h-64 relative shadow rounded leading-snug bg-white"
+											className="block h-64 relative shadow rounded-lg leading-snug bg-white"
 											key={index}
 										>
 											<img
-												className="w-full h-full rounded-r object-cover absolute"
+												className="w-full h-full object-cover absolute rounded-t-lg"
 												src={
 													project.mainImage.asset.url
 												}

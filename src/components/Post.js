@@ -57,17 +57,17 @@ export default function Post() {
 					{postData &&
 						postData.map((post, index) => {
 							return (
-								<article className="container mx-auto h-1em w-1em">
+								<article className="container mx-auto h-1em w-1em  transform hover:scale-105 hover:shadow-xl transition duration-300 bg-white rounded-lg">
 									<Link
 										to={"/post/" + post.slug.current}
 										key={post.slug.current}
 									>
 										<span
-											className="block h-64 relative shadow rounded leading-snug bg-white"
+											className="block h-64 relative shadow rounded-lg leading-snug bg-white"
 											key={index}
 										>
 											<img
-												className="w-full h-full rounded-r object-cover absolute"
+												className="w-full h-full object-cover absolute rounded-t-lg"
 												src={post.mainImage.asset.url}
 												alt={
 													post.mainImage.asset.altText
